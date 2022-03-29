@@ -53,14 +53,14 @@ body {
 }
 
 button {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 900;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
     /* padding: calc(3px + 0.7vw); */
     border-radius: 7px;
     background-color:rgb(127, 255, 212, 0.2);
     /* padding-bottom: 9vh; */
-    height: 8.3vh;
+    height: 6vh;
 }
 
 .nav {
