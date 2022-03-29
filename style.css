@@ -1,5 +1,104 @@
 
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+
 body {
-    background-color: black;
-    color: white;
+    background-image: url('./images/ramona-balaban-1nkqtBfYkm4-unsplash.jpg');
+    /* background-color: black; */
+    color: black;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.page-wrap {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    animation: bg-trans 2s forwards ease-in;
+    height: 100%;
+
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+
+@keyframes bg-trans {
+    from {
+
+        background-color: rgb(0, 0, 0);
+
+    }
+
+    to {
+
+        background-color: rgb(0, 0, 0, 0);
+
+    }
+}
+
+
+.content-wrap {
+    height: fit-content;
+    width: 80%;
+    background-color: rgb(255, 255, 255, 0.3);
+    /* padding-top: 0%; */
+
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: 900;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    /* padding: calc(3px + 0.7vw); */
+    border-radius: 7px;
+    background-color:rgb(127, 255, 212, 0.2);
+}
+
+.nav {
+    /* padding-top: 5vh; */
+    /* display: flex; */
+    /* padding: 1vw; */
+    width: 100%;
+    background-color: rgb(255, 228, 196, 0.6);
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.nav>ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: calc(5vw - 10px) ;
+    justify-content: center;
+    align-content: center;
+    margin-left: 1vw;
+    margin-right: 1.9vw;
+    padding-top: 5vh;
+    list-style: none;
+    padding: 0;
+}
+
+.resume {
+    font-size: 1.1em;
+}
+
+
+
+.title {
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 900;
+    text-decoration: underline;
+    text-shadow: 2px 2px  2px antiquewhite
+    ;
+
 }
