@@ -9,7 +9,6 @@ html, body {
 body {
     background-image: url('./images/ramona-balaban-1nkqtBfYkm4-unsplash.jpg');
     /* background-color: black; */
-    color: black;
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
@@ -19,7 +18,7 @@ body {
     margin: 0;
     background-color: rgb(0, 0, 0);
     animation: bg-trans 2s forwards ease-in;
-    height: 100%;
+    height: fit-content;
 
 
 
@@ -70,6 +69,11 @@ button {
     background-color: rgb(255, 228, 196, 0.6);
     display: flex;
     justify-content: center;
+
+    position: sticky;
+    
+    top: 0;
+    z-index: 1;
     
 }
 
