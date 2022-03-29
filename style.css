@@ -53,12 +53,14 @@ body {
 }
 
 button {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 900;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
     /* padding: calc(3px + 0.7vw); */
     border-radius: 7px;
     background-color:rgb(127, 255, 212, 0.2);
+    /* padding-bottom: 9vh; */
+    height: 8.3vh;
 }
 
 .nav {
@@ -91,9 +93,9 @@ button {
     padding: 0;
 }
 
-.resume {
+/* .resume {
     font-size: 1.1em;
-}
+} */
 
 
 
@@ -105,4 +107,17 @@ button {
     text-shadow: 2px 2px  2px antiquewhite
     ;
 
+}
+
+.footer-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: calc(5vw - 10px) ;
+    justify-content: center;
+    align-content: center;
+    margin-left: 1vw;
+    margin-right: 1.9vw;
+    padding-top: 5vh;
+    list-style: none;
+    padding: 0;
 }
