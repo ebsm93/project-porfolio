@@ -95,7 +95,22 @@ button:hover {
     
     top: 0;
     z-index: 1;
-    
+
+    animation: nav-trans 4s forwards;
+}
+
+@keyframes nav-trans {
+    from {
+        background-color: rgb(255, 228, 196, 0.0);
+    }
+
+    50% {
+        background-color: rgb(255, 228, 196, 0.0);
+    }
+
+    to {
+        background-color: rgb(255, 228, 196, 0.8);
+    }
 }
 
 
@@ -184,7 +199,9 @@ button:hover {
 img {
     height: auto;
     width: clamp(10vw, 50%, 30vw);
-    border: 3px antiquewhite solid;
+    /* border: 3px rgb(124, 73, 6) solid; */
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px black;
     align-self: center;
 }
 
