@@ -214,6 +214,43 @@ a {
     color:rgb(4, 68, 68)
 }
 
+.slideright {
+    animation: rightslide 3s forwards;
+}
+
+.slideleft {
+    animation: leftslide 3s forwards;
+}
+
+@keyframes rightslide {
+    from {
+        transform: translateX(350%);      
+    }
+
+    30% {
+        transform: translateX(350%);   
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes leftslide {
+    from {
+        transform: translateX(-350%);      
+    }
+
+    50% {
+        transform: translateX(-350%);   
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
 /* .nav-items>li:hover {
     background-color:rgb(127, 255, 212, 0.5);
 } */
