@@ -58,9 +58,17 @@ button {
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
     /* padding: calc(3px + 0.7vw); */
     border-radius: 7px;
-    background-color:rgb(127, 255, 212, 0.2);
+    background-color:rgb(127, 255, 212, 0.4);
     /* padding-bottom: 9vh; */
     height: 6vh;
+}
+
+button:hover {
+    background-color:rgb(127, 255, 212, 0.6);
+    box-shadow: 3px 3px 4px rgb(255, 255, 255);
+    border-radius: 9px;
+    border-color: darkolivegreen;
+    border-width: 2px;
 }
 
 .nav {
@@ -68,7 +76,7 @@ button {
     /* display: flex; */
     /* padding: 1vw; */
     width: 100%;
-    background-color: rgb(255, 228, 196, 0.6);
+    background-color: rgb(255, 228, 196, 0.7);
     display: flex;
     justify-content: center;
 
@@ -109,9 +117,17 @@ button {
 
 }
 
+.footer {
+    width: 100%;
+    background-color: rgb(255, 228, 196, 0.7);
+    display: flex;
+    justify-content: center;
+
+}
+
 .footer-items {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: calc(5vw - 10px) ;
     justify-content: center;
     align-content: center;
@@ -121,3 +137,13 @@ button {
     list-style: none;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+    color:rgb(4, 68, 68)
+}
+
+/* .nav-items>li:hover {
+    background-color:rgb(127, 255, 212, 0.5);
+} */
+
