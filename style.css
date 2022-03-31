@@ -16,7 +16,7 @@ html, body {
     --btn-txt-color: rgb(0, 0, 0);
     --btn-txt-shadow: 1px 1px 1px rgba(255, 255, 255);
     --btn-bg-color-hover: rgba(0, 0, 0, 0.6);
-    --bg-color-entries: rgb(255, 255, 255, 0.7);
+    --bg-color-entries: rgb(255, 255, 255, 0.8);
     --border-entries:  double 6px rgb(4, 68, 68);
     --bg-color-footer: rgb(255, 228, 196, 0.7)
   }
@@ -180,7 +180,7 @@ button:hover {
 
     to {
 
-        background-color: rgb(255, 255, 255, 0.6);
+        background-color: var(--bg-color-entries);
 
     }
 }
