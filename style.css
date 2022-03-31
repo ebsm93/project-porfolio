@@ -155,7 +155,7 @@ button:hover {
 
 .entries>li {
     background-color: var(--bg-color-entries);
-    animation: bg-trans2 2.5s forwards;
+    animation: bg-trans2 2s forwards;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -307,7 +307,7 @@ a {
 @media (min-width: 500px) {
 
     .nav {
-        animation: nav-trans 4s forwards;
+        animation: nav-trans 3s forwards;
     }
 
     .entries {
