@@ -204,8 +204,8 @@ button:hover {
 }
 
 img {
+    width: clamp(200px, 50%, 330px);
     height: auto;
-    width: clamp(10vw, 50%, 30vw);
     /* border: 3px rgb(124, 73, 6) solid; */
     border-radius: 10px;
     box-shadow: 7px 7px 10px black;
@@ -238,29 +238,43 @@ a {
     color:rgb(4, 68, 68)
 }
 
-.slideright {
-    animation: rightslide 3s forwards;
+.slide-option1 {
+    animation: rightslide 1s forwards;
 }
 
-.slideleft {
-    animation: leftslide 3s forwards;
+.slide-option2 {
+    animation: leftslide 1s forwards ease-out;
 }
 
-@keyframes rightslide {
+@keyframes upslide {
     from {
-        transform: translateX(350%);      
+        transform: translateY(350%);      
     }
 
     30% {
-        transform: translateX(350%);   
+        transform: translateY(350%);   
     }
 
     to {
-        transform: translateX(0%);
+        transform: translateY(0%);
     }
 }
 
-@keyframes leftslide {
+@keyframes downslide {
+    from {
+        transform: translateY(-350%);      
+    }
+
+    50% {
+        transform: translateY(-350%);   
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes rightslide {
     from {
         transform: translateX(-350%);      
     }
@@ -273,6 +287,22 @@ a {
         transform: translateX(0%);
     }
 }
+
+@keyframes leftslide {
+    from {
+        transform: translateX(350%);      
+    }
+
+    50% {
+        transform: translateX(350%);   
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
 
 @media (min-width: 500px) {
 
@@ -290,6 +320,13 @@ a {
         height: 6vh;
     }
 
+    .slide-option1 {
+        animation: downslide 1s forwards;
+    }
+    
+    .slide-option2 {
+        animation: upslide 1s forwards ease-out;
+    }
 
 }
 
