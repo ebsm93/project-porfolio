@@ -127,7 +127,7 @@ button:hover {
 
 
 .title {
-    color: rgb(8, 83, 83);
+    color: rgb(15, 131, 131);
     text-align: center;
     font-size: 2.8em;
     font-weight: 900;
@@ -294,7 +294,7 @@ a {
 @media (min-width: 500px) {
 
     .nav {
-        animation: nav-trans 3s forwards;
+        animation: nav-trans 2.5s forwards;
     }
 
     .entries {
