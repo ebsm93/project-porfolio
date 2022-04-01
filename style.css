@@ -398,7 +398,7 @@ a {
     }
 
     .github{
-        height: 10vh;
+        /* height: 10vh; */
         width: 100%;
         /* padding: 5px; */
     }
