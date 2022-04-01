@@ -291,7 +291,7 @@ a {
     font-weight: 900;
     border-radius: 10px;
     align-self: flex-start;
-    animation: flicker 6s forwards;
+    animation: flicker 4s forwards;
 }
 
 @keyframes flicker {
