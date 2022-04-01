@@ -294,6 +294,10 @@ a {
     animation: flicker 4s forwards;
 }
 
+.live, .github {
+    font-size: 1.3em;
+}
+
 @keyframes flicker {
     from {
         color: white;
