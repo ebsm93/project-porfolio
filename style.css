@@ -61,6 +61,10 @@ body {
 
 }
 
+#my-name {
+    font-size: 1.2em;
+}
+
 button {
     font-size: 1.1em;
     font-weight: 900;
@@ -84,6 +88,7 @@ button:hover {
 }
 
 .nav {
+    margin-top: -20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -279,6 +284,42 @@ a {
     /* color: antiquewhite; */
 }
 
+.contact-top {
+    margin: 4vw;
+    background-color: rgb(233, 208, 176, 0.4) ;
+    font-size: 1.1em;
+    font-weight: 900;
+    border-radius: 10px;
+    align-self: flex-start;
+    animation: flicker 6s forwards;
+}
+
+@keyframes flicker {
+    from {
+        color: white;
+    }
+
+    20% {
+        color: black;
+    }
+
+    40% {
+        color:white
+    }
+
+    60%{
+        color: black
+        }
+
+    80% {
+        color: white;
+    }
+
+    to {
+        color: rgb(4, 68, 68);
+    }
+}
+
 @keyframes upslide {
     from {
         transform: translateY(350%);      
@@ -338,6 +379,13 @@ a {
 
 
 @media (min-width: 500px) {
+
+    .contact-top {
+        font-size: 1.3em;
+        margin-left: 20vw;
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+    }
 
     .nav {
         animation: nav-trans 2.5s forwards;
