@@ -63,6 +63,7 @@ body {
 
 #my-name {
     font-size: 1.2em;
+    /* -webkit-text-stroke: 1px white; */
 }
 
 button {
@@ -169,12 +170,14 @@ button:hover {
 
 
 .title {
-    color: rgb(15, 131, 131);
+    /* color: rgb(15, 131, 131); */
+    color: black;
     text-align: center;
     font-size: 2.8em;
     font-weight: 900;
     text-decoration: underline;
     text-shadow: 2px 2px  2px rgb(0, 0, 0);
+    -webkit-text-stroke: 1px white;
 
 }
 
@@ -233,12 +236,24 @@ button:hover {
 }
 
 img {
-    width: clamp(200px, 50%, 330px);
     height: auto;
     /* border: 3px rgb(124, 73, 6) solid; */
     border-radius: 10px;
     box-shadow: 7px 7px 10px black;
     align-self: center;
+    width: clamp(200px, 50%, 330px);
+    
+}
+
+.img-link {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+img:not(.no-hover):hover {
+    box-shadow: 3px 3px 3px grey;
 }
 
 .footer {
@@ -296,6 +311,7 @@ a {
 
 .live, .github {
     font-size: 1.3em;
+    text-decoration: underline;
 }
 
 @keyframes flicker {
@@ -320,7 +336,8 @@ a {
     }
 
     to {
-        color: rgb(4, 68, 68);
+        /* color: rgb(4, 68, 68); */
+        color: black;
     }
 }
 
